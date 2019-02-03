@@ -1,0 +1,54 @@
+{
+  "name": "feathers-next",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://www.nathanjgaul.com",
+  "main": "server",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "NathanJG",
+    "email": "nathanjgaul@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "server",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && NODE_ENV= npm run jest",
+    "eslint": "eslint server/. test/. --config .eslintrc.json",
+    "dev": "nodemon server/",
+    "start": "node server/",
+    "jest": "jest"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.6",
+    "@feathersjs/errors": "^3.3.6",
+    "@feathersjs/express": "^1.3.1",
+    "@feathersjs/feathers": "^3.3.1",
+    "@feathersjs/socketio": "^3.2.9",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "helmet": "^3.15.0",
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "jest": "^24.0.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
