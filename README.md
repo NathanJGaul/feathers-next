@@ -4,7 +4,7 @@
 
 ## About
 
-This project combines [Feathers](http://feathersjs.com) and [next.js](https://nextjs.org/). **All credit for combining these two great tools goes to Albert Gao ([Blog Post](http://www.albertgao.xyz/2018/02/04/how-to-do-server-side-rendering-with-feathersjs-and-nextjs/), [Github Repo](https://github.com/Albert-Gao/feathers-next-example)).**
+This project combines [Feathers](http://feathersjs.com) and [Next.js](https://nextjs.org/). **All credit for combining these two great tools goes to Albert Gao ([Blog Post](http://www.albertgao.xyz/2018/02/04/how-to-do-server-side-rendering-with-feathersjs-and-nextjs/), [Github Repo](https://github.com/Albert-Gao/feathers-next-example)).**
 
 ## Getting Started
 
@@ -22,6 +22,16 @@ Getting up and running is as easy as 1, 2, 3.
     ```
     npm start
     ```
+
+## Adding New Feathers Services
+
+1. Generate a new Feathers service.
+
+    ```
+    feathers generate service
+    ```
+
+2. Add the service route to the `feathersServices` array in `nextApp.js`.
 
 ## License
 
